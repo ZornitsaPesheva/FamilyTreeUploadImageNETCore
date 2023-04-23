@@ -1,10 +1,10 @@
-# Tutorial: How to Upload Image Files from OrgChart JS to the server - ASP.NET Core
+# Tutorial: How to Upload Image Files from FamilyTree JS to the server - ASP.NET Core
 
 To upload image from the edit form you have to implement imageuploaded event hadler. Here is an example
 
 ```
-chart.editUI.on('element-btn-click', function (sender, args) {
-    OrgChart.fileUploadDialog(function (file) {
+family.editUI.on('element-btn-click', function (sender, args) {
+    FamilyTree.fileUploadDialog(function (file) {
         var formData = new FormData();
         formData.append('files', file);
 
